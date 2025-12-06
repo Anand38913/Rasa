@@ -1,12 +1,19 @@
-# --- Critical Secrets ---
-.env           # Never commit secrets or API keys
+# --- Critical Secrets & Configuration ---
+.env
 
-# --- Python Build Artifacts ---
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.egg-info/    # Excludes the my_rasa_project.egg-info/ directory
-.tox/
+# --- Python Environments ---
+venv/        # Your local virtual environment
+.venv/       # Standard virtual environment folder
+env/         # Another common name for virtual environment
+__pycache__/ # Compiled Python files
+
+# --- Packaging & Build Artifacts ---
+*.egg-info/  # Includes your my_rasa_project.egg-info/ folder
 build/
 dist/
+*.pyc
+*.pyo
+
+# --- IDE Files (Optional but recommended) ---
+.idea/
+.vscode/
