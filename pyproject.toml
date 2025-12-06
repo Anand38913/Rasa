@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-rasa-project"  # Use your project's actual name (lowercase, hyphens)
+version = "3.6.13"        # Match this to your package's actual version (e.g., matching Rasa's major version or your own versioning)
+description = "A Rasa chatbot application deployed on Render"
+readme = "README.md"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+license = {text = "MIT License"}
+requires-python = ">=3.10,<3.11" # Set your required Python version range
+
+# Define your dependencies here (copied from your requirements.txt)
+dependencies = [
+    "rasa==3.6.13",
+    "Flask==2.3.3",
+    "flask-cors==4.0.0",
+    "gunicorn==21.2.0",
+    "Werkzeug==2.3.7",
+    "twilio>=8.0.0,<8.3.0",
+    "requests==2.31.0",
+    "python-dotenv==1.0.0",
+    "pydub==0.25.1",
+    "python-dateutil==2.8.2",
+    "urllib3>=1.26.0,<2.0.0",
+    "coloredlogs==15.0.1",
+    "python-json-logger==2.0.7",
+]
+
+[project.urls]
+"Homepage" = "https://rasa-g30w.onrender.com"
+"Bug Tracker" = "https://github.com/Anand38913/Rasa/issues"
+
+# This section tells pip where to find your entry points (e.g., for command line scripts)
+# This is usually not needed for a deployment-only project, but is good practice.
+# [project.scripts]
+# rasa-app = "your_module:main_function"
