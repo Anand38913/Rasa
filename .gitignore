@@ -1,9 +1,18 @@
-.env
-venv/
+# --- Python Specific ---
 __pycache__/
 *.pyc
-.DS_Store
-.rasa/
-models/
-results/
-story_graph.dot
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# --- Packaging/Distribution ---
+dist/
+build/
+*.egg-info/     # <-- THIS IS THE KEY LINE
+.tox/
+
+# --- Logs and Artifacts ---
+*.log
+*.sqlite3
