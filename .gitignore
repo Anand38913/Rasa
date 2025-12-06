@@ -1,18 +1,12 @@
-# --- Python Specific ---
+# --- Critical Secrets ---
+.env           # Never commit secrets or API keys
+
+# --- Python Build Artifacts ---
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.venv/
-venv/
-env/
-
-# --- Packaging/Distribution ---
-dist/
-build/
-*.egg-info/     # <-- THIS IS THE KEY LINE
+*.egg-info/    # Excludes the my_rasa_project.egg-info/ directory
 .tox/
-
-# --- Logs and Artifacts ---
-*.log
-*.sqlite3
+build/
+dist/
