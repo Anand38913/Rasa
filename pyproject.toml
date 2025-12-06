@@ -1,7 +1,8 @@
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
-
+[project.dependencies]
+python-socketio = "==5.7.4"
 [project]
 name = "my-rasa-project"  # Use your project's actual name (lowercase, hyphens)
 version = "3.6.13"        # Match this to your package's actual version (e.g., matching Rasa's major version or your own versioning)
