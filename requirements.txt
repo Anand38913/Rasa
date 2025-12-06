@@ -1,0 +1,30 @@
+# Python version: 3.8 - 3.11 (all compatible, 3.10.x recommended)
+
+# Core Framework
+Flask==2.3.3
+flask-cors==4.0.0
+gunicorn==21.2.0
+Werkzeug==2.3.7
+
+# Rasa - Install first to resolve dependencies
+rasa==3.6.13
+
+# Twilio - Compatible with Rasa 3.6.13 (requires <8.3)
+twilio>=8.0.0,<8.3.0
+
+# HTTP Requests
+requests==2.31.0
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# Audio Processing
+pydub==0.25.1
+
+# Additional utilities
+python-dateutil==2.8.2
+urllib3>=1.26.0,<2.0.0
+
+# Optional but recommended for production
+coloredlogs==15.0.1
+python-json-logger==2.0.7

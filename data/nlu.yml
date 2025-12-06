@@ -1,0 +1,126 @@
+version: "3.1"
+
+nlu:
+# Greetings - Multilingual
+- intent: greet
+  examples: |
+    - नमस्ते
+    - हेलो
+    - नमस्कार
+    - శుభోదయం
+    - నమస్కారం
+    - హలో
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+    - السلام علیکم
+    - ہیلو
+    - آداب
+
+# Goodbye - Multilingual
+- intent: goodbye
+  examples: |
+    - अलविदा
+    - धन्यवाद
+    - बाय
+    - వీడ్కోలు
+    - ధన్యవాదాలు
+    - బై
+    - goodbye
+    - bye
+    - see you
+    - talk to you later
+    - خدا حافظ
+    - شکریہ
+    - الوداع
+
+# Affirmation
+- intent: affirm
+  examples: |
+    - हाँ
+    - जी हाँ
+    - ठीक है
+    - बिल्कुल
+    - అవును
+    - సరే
+    - చాలా బాగుంది
+    - yes
+    - yeah
+    - sure
+    - ok
+    - okay
+    - correct
+    - ہاں
+    - جی ہاں
+    - ٹھیک ہے
+
+# Denial
+- intent: deny
+  examples: |
+    - नहीं
+    - जी नहीं
+    - बिल्कुल नहीं
+    - కాదు
+    - వద్దు
+    - no
+    - nope
+    - not really
+    - نہیں
+    - بالکل نہیں
+
+# Information Request
+- intent: ask_info
+  examples: |
+    - मुझे जानकारी चाहिए
+    - क्या आप मदद कर सकते हैं
+    - मुझे बताएं
+    - నాకు సమాచారం కావాలి
+    - మీరు సహాయం చేయగలరా
+    - I need information
+    - can you help me
+    - tell me about
+    - what can you do
+    - مجھے معلومات چاہیے
+    - کیا آپ مدد کر سکتے ہیں
+
+# Provide Details
+- intent: provide_details
+  examples: |
+    - मेरा नाम [राजेश](name) है
+    - मैं [राधा](name) हूँ
+    - నా పేరు [రమేష్](name)
+    - నేను [సుజాత](name)
+    - my name is [John](name)
+    - I am [Sarah](name)
+    - میرا نام [احمد](name) ہے
+    - [फोन नंबर](phone_number) है [9876543210](phone_number)
+    - నా [ఫోన్ నంబర్](phone_number) [9876543210](phone_number)
+
+# Help Request
+- intent: help
+  examples: |
+    - मदद करो
+    - मुझे सहायता चाहिए
+    - సహాయం చేయండి
+    - నాకు సహాయం కావాలి
+    - help
+    - I need help
+    - assist me
+    - مدد کریں
+    - مجھے مدد چاہیے
+
+# Thanks
+- intent: thank
+  examples: |
+    - धन्यवाद
+    - शुक्रिया
+    - बहुत बहुत धन्यवाद
+    - ధన్యవాదాలు
+    - చాలా ధన్యవాదాలు
+    - thanks
+    - thank you
+    - thanks a lot
+    - شکریہ
+    - بہت شکریہ

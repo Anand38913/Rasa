@@ -1,0 +1,22 @@
+# Rasa Endpoints Configuration
+
+# Action server endpoint (if using custom actions)
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+# Tracker store (for production, use PostgreSQL or Redis)
+# tracker_store:
+#   type: redis
+#   url: localhost
+#   port: 6379
+#   db: 0
+#   password: your_redis_password
+#   use_ssl: false
+
+# Event broker (for scaling)
+# event_broker:
+#   type: pika
+#   url: localhost
+#   username: guest
+#   password: guest
+#   queue: rasa_events

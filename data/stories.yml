@@ -1,0 +1,54 @@
+version: "3.1"
+
+stories:
+
+# Basic greeting conversation
+- story: basic greeting
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: help
+    - action: utter_help
+
+# User provides information
+- story: user provides name
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_ask_name
+    - intent: provide_details
+    - action: utter_confirm
+
+# Help conversation
+- story: help request
+  steps:
+    - intent: help
+    - action: utter_help
+    - intent: thank
+    - action: utter_goodbye
+
+# Information inquiry
+- story: ask for information
+  steps:
+    - intent: ask_info
+    - action: utter_help
+    - intent: affirm
+    - action: utter_confirm
+
+# Complete conversation flow
+- story: complete conversation
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_info
+    - action: utter_help
+    - intent: provide_details
+    - action: utter_confirm
+    - intent: thank
+    - action: utter_goodbye
+
+# Goodbye flow
+- story: say goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
